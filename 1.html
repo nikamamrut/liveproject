@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+   <head>
+      <script>
+       function fungsi() {
+
+         var c = document.getElementById("C").checked;
+         var e = document.getElementById("E").checked;
+         var f = document.getElementById("F").checked;
+         var g = document.getElementById("G").checked;
+
+         if (c.checked = true &&
+           e.checked = true &&
+           g.checked = true &&
+           f.checked = false) {
+           document.getElementById("chord").innerHTML = "C Chord";
+         } else if (c.checked = true &&
+           f.checked = true &&
+           g.checked = false &&
+           e.checked = false) {
+           document.getElementById("chord").innerHTML = "F Chord";
+         } else {
+           alert("Under Development!");
+         }
+       }
+      </script>
+   </head>
+   <body>
+      <form>
+         Note(s) That You Hit:<br>
+         <input type=checkbox id="C">C<br>
+         <input type=checkbox id="E">E<br>
+         <input type=checkbox id="F">F<br>
+         <input type=checkbox id="G">G
+      </form>
+      <button type=button onclick="fungsi()">The Chord Is</button>
+      <p id="chord"></p>
+   </body>
+</html>

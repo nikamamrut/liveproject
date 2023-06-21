@@ -1,0 +1,20 @@
+
+
+  body{
+    background-color: pink;
+    }
+    <style>
+    .myslide{
+        color: violet;
+        font-size:15px;
+        font-family :Algerian;
+        text-align: center;
+       text-transform: uppercase;
+       background :rgba(0,0,0,0.5);
+       padding: 10px;
+       position: absolute;
+       top: 5%;
+       left: 50%;
+       transform: matrix(-50,-50);
+       }
+</style>
